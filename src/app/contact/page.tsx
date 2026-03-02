@@ -179,7 +179,7 @@ export default function ContactPage() {
       ref={mainRef}
       className="min-h-screen bg-slate-50 text-slate-800 font-sans pt-24 pb-20 relative overflow-hidden"
     >
-      <Toaster position="top-center" />
+      <Toaster position="top-center" toastOptions={{ duration: 5000 }} />
       {/* Background Decor */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-400/10 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3 pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[800px] h-[800px] bg-indigo-400/10 rounded-full blur-[150px] translate-y-1/3 -translate-x-1/3 pointer-events-none" />
