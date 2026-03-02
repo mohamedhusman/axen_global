@@ -1,0 +1,42 @@
+
+> axenglobalweb@0.1.0 lint
+> eslint
+
+
+C:\Users\Usman\Documents\axen_global\src\app\about\page.tsx
+    3:36  warning  'useState' is defined but never used                             @typescript-eslint/no-unused-vars
+   11:3   warning  'ArrowRight' is defined but never used                           @typescript-eslint/no-unused-vars
+   93:9   error    'ctx' is never reassigned. Use 'const' instead                   prefer-const
+  387:21  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  389:71  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  492:18  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\Usman\Documents\axen_global\src\app\services\page.tsx
+  555:40  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  556:31  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\Usman\Documents\axen_global\src\components\Benefits.tsx
+  254:42  error  Unexpected any. Specify a different type                                                                             @typescript-eslint/no-explicit-any
+  362:17  error  Use "@ts-expect-error" instead of "@ts-ignore", as "@ts-ignore" will do nothing if the following line is error-free  @typescript-eslint/ban-ts-comment
+  364:17  error  Use "@ts-expect-error" instead of "@ts-ignore", as "@ts-ignore" will do nothing if the following line is error-free  @typescript-eslint/ban-ts-comment
+  427:19  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`                                                      react/no-unescaped-entities
+  427:31  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`                                                      react/no-unescaped-entities
+
+C:\Users\Usman\Documents\axen_global\src\components\HowItWorks.tsx
+  547:52  warning  'index' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\Usman\Documents\axen_global\src\components\NavBar.tsx
+  7:9  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\Usman\Documents\axen_global\src\components\ServiceCard.tsx
+  20:3  warning  'index' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\Usman\Documents\axen_global\src\components\TeamCard.tsx
+   6:3   warning  'index' is defined but never used                                                                                                                                                                                                                                                        @typescript-eslint/no-unused-vars
+   8:11  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                 @typescript-eslint/no-explicit-any
+  12:10  warning  'isHovered' is assigned a value but never used                                                                                                                                                                                                                                           @typescript-eslint/no-unused-vars
+  60:13  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+✖ 20 problems (12 errors, 8 warnings)
+  1 error and 0 warnings potentially fixable with the `--fix` option.
+
