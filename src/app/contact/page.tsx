@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import gsap from "gsap";
 import toast from "react-hot-toast";
+import { Toaster } from "react-hot-toast";
 
 export default function ContactPage() {
   const [form, setForm] = useState({
@@ -148,7 +149,7 @@ export default function ContactPage() {
           "Thanks — we received your request. We'll reply within 48 hours.",
       });
       toast.success(
-        "Thanks — we received your request. We'll reply within 48 hours.",
+        "Thanks we received your request. We'll reply within 48 hours.",
       );
       setForm({
         name: "",
@@ -178,6 +179,7 @@ export default function ContactPage() {
       ref={mainRef}
       className="min-h-screen bg-slate-50 text-slate-800 font-sans pt-24 pb-20 relative overflow-hidden"
     >
+      <Toaster position="top-center" />
       {/* Background Decor */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-400/10 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3 pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[800px] h-[800px] bg-indigo-400/10 rounded-full blur-[150px] translate-y-1/3 -translate-x-1/3 pointer-events-none" />
@@ -235,7 +237,10 @@ export default function ContactPage() {
                   Call Us
                 </p>
                 <p className="text-lg font-semibold text-slate-900">
-                  +94 77 123 4567
+                  +94 777 510 851
+                </p>
+                <p className="text-lg font-semibold text-slate-900">
+                  +94 722 436 712
                 </p>
               </div>
             </div>
@@ -365,7 +370,7 @@ export default function ContactPage() {
                       value={form.phone}
                       onChange={handleChange}
                       className="w-full px-5 py-3.5 bg-slate-50 border-2 border-slate-100 rounded-xl focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-500/10 transition-all outline-none"
-                      placeholder="+1 (555) 000-0000"
+                      placeholder="+94 77 123 4567"
                     />
                   </div>
                   <div className="space-y-1">
