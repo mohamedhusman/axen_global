@@ -1,21 +1,6 @@
 // servicesData.js
 export const services = [
   {
-    id: "accounting",
-    title: "Accounting & Audit",
-    subtitle: "Professional financial solutions",
-    description:
-      "Accurate bookkeeping, compliant reporting, and audit‑ready processes that keep your business financially healthy.",
-    points: [
-      "Professional bookkeeping and ledger management",
-      "Financial reporting and dashboards",
-      "Tax compliance and filing support",
-      "Audit preparation and external audit support",
-      "Strategic financial planning and cashflow forecasting",
-    ],
-    icon: "Calculator",
-  },
-  {
     id: "software",
     title: "Software Solutions",
     subtitle: "Innovative technology for SMEs",
@@ -30,6 +15,22 @@ export const services = [
     ],
     icon: "Laptop",
   },
+  {
+    id: "accounting",
+    title: "Accounting & Audit",
+    subtitle: "Professional financial solutions",
+    description:
+      "Accurate bookkeeping, compliant reporting, and audit‑ready processes that keep your business financially healthy.",
+    points: [
+      "Professional bookkeeping and ledger management",
+      "Financial reporting and dashboards",
+      "Tax compliance and filing support",
+      "Audit preparation and external audit support",
+      "Strategic financial planning and cashflow forecasting",
+    ],
+    icon: "Calculator",
+  },
+
   {
     id: "advisory",
     title: "Business Advisory",

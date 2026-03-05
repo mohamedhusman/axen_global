@@ -181,8 +181,8 @@ export default function ContactPage() {
     >
       <Toaster position="top-center" toastOptions={{ duration: 5000 }} />
       {/* Background Decor */}
-      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-400/10 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3 pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-[800px] h-[800px] bg-indigo-400/10 rounded-full blur-[150px] translate-y-1/3 -translate-x-1/3 pointer-events-none" />
+      <div className="absolute top-0 right-0 w-150 h-150 bg-blue-400/10 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3 pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-200 h-200 bg-indigo-400/10 rounded-full blur-[150px] translate-y-1/3 -translate-x-1/3 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-16 relative z-10">
         {/* Header content */}
@@ -193,7 +193,7 @@ export default function ContactPage() {
           </div>
           <h1 className="hero-elem text-4xl md:text-6xl font-extrabold text-slate-900 mb-6 tracking-tight">
             Start a{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-indigo-600">
               Conversation
             </span>
           </h1>
@@ -234,10 +234,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <p className="text-sm font-bold text-slate-500 uppercase tracking-wider mb-1">
-                  Call Us
-                </p>
-                <p className="text-lg font-semibold text-slate-900">
-                  +94 777 510 851
+                  Call Us or Whats App
                 </p>
                 <p className="text-lg font-semibold text-slate-900">
                   +94 722 436 712
@@ -293,7 +290,7 @@ export default function ContactPage() {
             <form
               ref={formRef}
               onSubmit={submit}
-              className="bg-white rounded-[2rem] shadow-[0_20px_60px_rgba(0,0,0,0.05)] border border-slate-100 p-8 md:p-12"
+              className="bg-white rounded-4xl shadow-[0_20px_60px_rgba(0,0,0,0.05)] border border-slate-100 p-8 md:p-12"
             >
               <div className="mb-8">
                 <h2 className="text-2xl font-bold text-slate-900 mb-2">

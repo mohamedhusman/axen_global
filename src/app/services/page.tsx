@@ -553,11 +553,11 @@ export default function ServicesPage() {
       {activeService && activeServiceData && (
         <div
           ref={modalBgRef}
-          className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/60 backdrop-blur-md p-4"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/60 backdrop-blur-md p-4 "
         >
           <div
             ref={modalRef}
-            className="bg-white rounded-3xl shadow-2xl max-w-2xl w-full p-8 md:p-12 relative"
+            className="bg-white rounded-3xl shadow-2xl max-w-2xl w-full p-8 md:p-12 relative overflow-scroll max-h-screen"
           >
             <button
               onClick={() => setActiveService(null)}

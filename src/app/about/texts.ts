@@ -43,6 +43,11 @@ export const teamMembers = [
     role: "Backend Developer",
     photo: "/team/MR Ayyash.jpeg",
   },
+  {
+    name: "Yaseer Mohammed",
+    role: "Sales & Marketing Executive",
+    photo: "/team/mohamedhyaseer.jpeg",
+  },
 ];
 
 export const values = [
