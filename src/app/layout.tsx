@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Axen Global: Innovative Solutions for Business Success",
+  title: "Solution Wings: Innovative Solutions for Business Success",
   description:
-    "Axen Global is a leading provider of innovative solutions and services, dedicated to helping businesses thrive in the digital age. With a focus on cutting-edge technology and exceptional customer service, we empower organizations to achieve their goals and drive success.",
+    "Solution Wings is a leading provider of innovative solutions and services, dedicated to helping businesses thrive in the digital age. With a focus on cutting-edge technology and exceptional customer service, we empower organizations to achieve their goals and drive success.",
 };
 
 export default function RootLayout({
@@ -29,7 +29,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.png" />
-        <script
+        {/* <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-6RG82DLZRF"
         ></script>
@@ -42,7 +42,7 @@ export default function RootLayout({
         gtag('config', 'G-6RG82DLZRF');
       `,
           }}
-        />
+        /> */}
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

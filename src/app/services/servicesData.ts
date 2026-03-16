@@ -112,16 +112,24 @@ export const addOns = [
 
 export const commonQuestions = [
   {
-    q: "How do you price custom work?",
-    a: "We provide a scoped proposal and time‑boxed SOW. For large data or integrations we include a discovery phase to estimate effort.",
+    q: "How do you price custom solutions?",
+    a: "We provide a scoped proposal with clear deliverables. For complex integrations, we include a discovery phase to estimate effort accurately.",
   },
   {
-    q: "Can you migrate our existing data?",
-    a: "Yes we handle data migration with validation steps and a rollback plan for safety.",
+    q: "Can you migrate our existing systems?",
+    a: "Yes, we handle system and data migration with validation steps, backups, and rollback plans to ensure safety and continuity.",
   },
   {
     q: "Do you offer ongoing support?",
-    a: "We offer monthly support packages and SLA options for enterprise clients.",
+    a: "We provide monthly support packages, SLA options for enterprise clients, and dedicated helpdesk access for quick resolution.",
+  },
+  {
+    q: "Can you customize software for our business?",
+    a: "Absolutely. We tailor solutions to your workflows, ensuring scalability and alignment with your long-term goals.",
+  },
+  {
+    q: "What industries do you serve?",
+    a: "We work with SMEs across finance, retail, logistics, and professional services — adapting our solutions to diverse business needs.",
   },
 ];
 

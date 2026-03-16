@@ -238,9 +238,10 @@ export default function AboutPage() {
 
             <p className="hero-desc text-lg md:text-xl text-slate-400 max-w-3xl leading-relaxed mb-16">
               Finance and technology shouldn&apos;t feel complicated. At
-              AxenGlobal, we blend professional accounting with innovative
-              software to give SMEs practical solutions that save time, reduce
-              stress, and fuel sustainable growth.
+              <span className="text-white"> Solution Wings</span>, we blend
+              professional accounting with innovative software to give SMEs
+              practical solutions that save time, reduce stress, and fuel
+              sustainable growth.
             </p>
 
             {/* Quick Stats */}
@@ -375,7 +376,7 @@ export default function AboutPage() {
                 </h3>
                 <div className="space-y-5 text-lg text-slate-400">
                   <p className="story-element leading-relaxed">
-                    AxenGlobal started with one bold idea: make world-class
+                    SolutionWings started with one bold idea: make world-class
                     financial expertise and smart technology available to every
                     growing business — numbers and code working hand in hand.
                   </p>
@@ -497,7 +498,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16 max-w-2xl mx-auto">
             <h2 className="text-blue-400 font-semibold tracking-wider uppercase mb-4 text-sm">
-              The Axen Difference
+              The Value Difference
             </h2>
             <h3 className="text-3xl md:text-5xl font-bold text-white mb-6">
               What Sets Us Apart

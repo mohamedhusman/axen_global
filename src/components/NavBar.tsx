@@ -31,8 +31,8 @@ const NavBar = () => {
     <nav className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-8 py-4 backdrop-blur-md bg-[#001233]/40 border-b border-white/10">
       <Link href={"/"} onClick={closeMenu} className="relative z-50">
         <img
-          src="/axenglobalicon.png"
-          alt="AxenGlobal Logo"
+          src="/solutionwings.webp"
+          alt="Solution wings Logo"
           className="h-12 w-auto object-contain"
         />
       </Link>

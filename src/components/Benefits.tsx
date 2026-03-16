@@ -148,7 +148,7 @@ const Benefits = () => {
       name: "Sarah Ziyath",
       role: "Founder, Local Retail",
       comment:
-        "AxenGlobal completely transformed how we handle inventory. Costs dropped 30% almost instantly. Truly stellar support from the team.",
+        "Solution Wings completely transformed how we handle inventory. Costs dropped 30% almost instantly. Truly stellar support from the team.",
       initials: "SZ",
       bg: "bg-blue-600",
     },

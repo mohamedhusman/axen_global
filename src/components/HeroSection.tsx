@@ -36,7 +36,7 @@ const HeroSection = () => {
       <div className="relative z-10 flex flex-col items-center justify-center grow text-center px-6 pt-24">
         <div className="inline-block px-4 py-1.5 mb-6 border border-blue-400/30 rounded-full bg-blue-500/5 backdrop-blur-sm">
           <span className="text-xs lg:text-sm font-semibold tracking-widest uppercase text-blue-300">
-            Next-Gen Financial Solutions
+            NEXT‑GEN BUSINESS SOLUTIONS
           </span>
         </div>
 
@@ -44,19 +44,19 @@ const HeroSection = () => {
           ref={headlineRef}
           className="text-5xl md:text-7xl lg:text-8xl font-black mb-8 leading-[1.1] tracking-tight max-w-5xl"
         >
-          Elevating{" "}
+          Solutions{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-white">
-            Finance
+            That Empower Growth
           </span>{" "}
-          Through Tech
+          {/* Through Tech */}
         </h1>
 
         <p
           ref={subtextRef}
           className="text-lg md:text-2xl text-blue-100/80 mb-12 max-w-2xl font-light leading-relaxed"
         >
-          Smart Accounting. Innovative Software. Strategic Advisory. Empowering
-          your business journey with Axen Global.
+          We deliver smart systems and innovative support, giving your business
+          the wings to thrive.
         </p>
 
         <div
@@ -76,7 +76,7 @@ const HeroSection = () => {
             href="/services"
             className="px-8 py-4 border border-white/20 text-white font-bold rounded-full backdrop-blur-sm transition-all hover:bg-white/10 hover:border-white/40 active:scale-95"
           >
-            Explore Services
+            Discover Solutions
           </Link>
         </div>
       </div>

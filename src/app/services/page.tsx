@@ -214,9 +214,9 @@ export default function ServicesPage() {
           </span>
         </h1>
         <p className="hero-text max-w-2xl mx-auto text-xl text-slate-600 leading-relaxed">
-          Practical accounting, tailored software, and strategic advisory.
-          combined into powerful solutions that help SMEs operate smarter and
-          grow faster.
+          Tailored software, practical accounting, and strategic
+          advisory—combined into powerful solutions that help SMEs operate
+          smarter and grow faster.
         </p>
       </section>
 

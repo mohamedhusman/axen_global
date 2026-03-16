@@ -220,10 +220,10 @@ export default function ContactPage() {
                   Email Us
                 </p>
                 <a
-                  href="mailto:info@axenglobal.lk"
+                  href="mailto:info@solutionwings.com"
                   className="text-lg font-semibold text-slate-900 hover:text-blue-600 transition-colors"
                 >
-                  info@axenglobal.lk
+                  info@solutionwings.com
                 </a>
               </div>
             </div>
@@ -431,7 +431,7 @@ export default function ContactPage() {
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="space-y-1">
                     <label className="text-sm font-bold text-slate-700 ml-1">
-                      Data Size / Records Estimate
+                      Data Size / Records Estimate (optional)
                     </label>
                     <input
                       name="estimatedRecords"
@@ -443,7 +443,7 @@ export default function ContactPage() {
                   </div>
                   <div className="space-y-1">
                     <label className="text-sm font-bold text-slate-700 ml-1">
-                      Current Systems Used
+                      Current Systems Used (optional)
                     </label>
                     <div className="relative flex items-center">
                       <Box className="absolute left-4 text-slate-400 w-5 h-5" />

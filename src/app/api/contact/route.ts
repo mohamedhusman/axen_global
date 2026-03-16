@@ -49,8 +49,8 @@ export async function POST(req: NextRequest) {
     }
 
     const mailOptions = {
-      from: `"AxenGlobal Website" <${process.env.SMTP_USER || "no-reply@axenglobal.lk"}>`,
-      to: process.env.CONTACT_EMAIL || "info@axenglobal.lk", // Where to send the leads
+      from: `"Solution Wings Website" <${process.env.SMTP_USER || "no-reply@SolutionWings.com"}>`,
+      to: process.env.CONTACT_EMAIL || "info@solutionwings.com", // Where to send the leads
       subject: `New Lead from ${name} - ${service}`,
       html: `
         <h2>New Contact Submission</h2>

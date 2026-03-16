@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
         {/* Brand */}
         <div>
-          <h3 className="text-2xl font-bold mb-3">AxenGlobal.lk</h3>
+          <h3 className="text-2xl font-bold mb-3">solutionwings.com</h3>
           <p className="text-gray-300">
             Where Finance Meets Technology. Empowering SMEs with smart
             accounting, innovative software, and trusted advisory.
@@ -44,9 +44,14 @@ const Footer = () => {
         {/* Contact */}
         <div>
           <h4 className="text-xl font-semibold mb-3">Contact</h4>
-          <p className="text-gray-300">Email: info@axenglobal.lk</p>
+          <p className="text-gray-300">Email: info@solutionwings.com</p>
           <div className="flex space-x-4 mt-4">
-            <Link href="#" className="hover:text-yellow-400">
+            <Link
+              href="https://www.linkedin.com/company/solution-wings"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-yellow-400"
+            >
               <FaLinkedin size={20} />
             </Link>
             <a href="#" className="hover:text-yellow-400">
@@ -61,7 +66,7 @@ const Footer = () => {
 
       {/* Bottom strip */}
       <div className="text-center text-gray-400 mt-10 border-t border-gray-700 pt-6">
-        © {new Date().getFullYear()} AxenGlobal.lk — All Rights Reserved
+        © {new Date().getFullYear()} solutionwings — All Rights Reserved
       </div>
     </footer>
   );
