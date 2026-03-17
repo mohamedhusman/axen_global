@@ -44,6 +44,32 @@ export default function RootLayout({
           }}
         /> */}
       </head>
+      <html lang="en">
+        <head>
+          <link rel="icon" href="/favicon.png" />
+          {/* <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-6RG82DLZRF"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){window.dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-6RG82DLZRF');
+      `,
+          }}
+        /> */}
+        </head>
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        >
+          <NavBar />
+          {children}
+          <Footer />
+        </body>
+      </html>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
