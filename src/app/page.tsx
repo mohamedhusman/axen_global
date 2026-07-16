@@ -1,19 +1,21 @@
-import HeroSection from "../components/HeroSection";
-import ProblemStatement from "../components/ProblemStatement";
-import FeaturesSolutions from "../components/FeaturesSolutions";
-import HowItWorks from "../components/HowItWorks";
-import Benefits from "../components/Benefits";
+import Hero from "@/components/home/Hero";
+import About from "@/components/home/About";
+import ServicesGrid from "@/components/home/ServicesGrid";
+import WhyUs from "@/components/home/WhyUs";
+import Process from "@/components/home/Process";
+import Projects, { CTA } from "@/components/home/Projects";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-white font-sans">
-      <main className="flex min-h-screen w-full flex-col items-center justify-center">
-        <HeroSection />
-        <ProblemStatement />
-        <FeaturesSolutions />
-        <HowItWorks />
-        <Benefits />
-      </main>
-    </div>
+    <>
+      <Hero />
+      <div className="hairline" />
+      <About />
+      <ServicesGrid />
+      <WhyUs />
+      <Process />
+      <Projects />
+      <CTA />
+    </>
   );
 }

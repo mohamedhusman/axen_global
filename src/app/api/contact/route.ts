@@ -10,19 +10,13 @@ export async function POST(req: NextRequest) {
     if (honeypot) {
       return NextResponse.json({ message: "Spam detected." }, { status: 400 });
     }
-
     // Extract fields
     const name = formData.get("name") || "No Name Provided";
     const email = formData.get("email") || "No Email Provided";
     const phone = formData.get("phone") || "Not Provided";
     const company = formData.get("company") || "Not Provided";
     const service = formData.get("service") || "Not Provided";
-    const industry = formData.get("industry") || "Not Provided";
-    const systems = formData.get("systems") || "Not Provided";
-    const estimatedRecords = formData.get("estimatedRecords") || "Not Provided";
     const message = formData.get("message") || "No Message Provided";
-    const preferredContact = formData.get("preferredContact") || "Not Provided";
-    const preferredTime = formData.get("preferredTime") || "Not Provided";
 
     const attachment = formData.get("attachment") as File | null;
 
@@ -59,11 +53,6 @@ export async function POST(req: NextRequest) {
         <p><strong>Phone:</strong> ${phone}</p>
         <p><strong>Company:</strong> ${company}</p>
         <p><strong>Service Interested:</strong> ${service}</p>
-        <p><strong>Industry:</strong> ${industry}</p>
-        <p><strong>Estimated Records:</strong> ${estimatedRecords}</p>
-        <p><strong>Systems Used:</strong> ${systems}</p>
-        <p><strong>Preferred Contact Method:</strong> ${preferredContact}</p>
-        <p><strong>Preferred Contact Time:</strong> ${preferredTime}</p>
         <br/>
         <h3>Message:</h3>
         <p>${message}</p>

@@ -1,75 +1,163 @@
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
+import {
+  Linkedin,
+  Mail,
+  Phone,
+  MapPin,
+  Instagram,
+  Facebook,
+} from "lucide-react";
+import { company, services } from "@/lib/data";
+import Image from "next/image";
 
-const Footer = () => {
+const nav = [
+  { href: "/", label: "Home" },
+  { href: "/services", label: "Services" },
+  { href: "/work", label: "Work" },
+  { href: "/about", label: "About" },
+  { href: "/contact", label: "Contact" },
+];
+
+const socials = [
+  {
+    href: "https://www.facebook.com/people/Solution-Wings/61579562647614/",
+    label: "Facebook",
+    icon: Facebook,
+  },
+  {
+    href: "https://www.linkedin.com/company/solution-wings",
+    label: "LinkedIn",
+    icon: Linkedin,
+  },
+  // { href: "https://github.com/", label: "GitHub", icon: Github },
+  {
+    href: "https://www.instagram.com/solution_wings",
+    label: "Instagram",
+    icon: Instagram,
+  },
+];
+
+export default function Footer() {
   return (
-    <footer className="bg-blue-900 text-white py-10 px-6 md:px-16">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
-        {/* Brand */}
-        <div>
-          <h3 className="text-2xl font-bold mb-3">solutionwings.com</h3>
-          <p className="text-gray-300">
-            Where Finance Meets Technology. Empowering SMEs with smart
-            accounting, innovative software, and trusted advisory.
-          </p>
-        </div>
+    <footer className="relative border-t border-line bg-surface/40">
+      <div className="container-site py-16 md:py-20">
+        <div className="grid gap-12 md:grid-cols-12">
+          {/* Brand */}
+          <div className="md:col-span-4">
+            <div className="flex items-center gap-2.5">
+              <span className="">
+                {/* wing mark */}
+                <Image
+                  src={"/solutionwings.webp"}
+                  alt="Solution Wings"
+                  width={32}
+                  height={32}
+                />
+              </span>
+              <span className="text-lg font-semibold tracking-tight">
+                Solution<span className="text-muted">Wings</span>
+              </span>
+            </div>
+            <p className="mt-5 max-w-sm text-sm leading-relaxed text-muted">
+              A custom software development company. We engineer web, mobile,
+              and AI-powered systems built specifically for your business — no
+              templates, ever.
+            </p>
+            <div className="mt-6 flex gap-3">
+              {socials.map((s) => (
+                <a
+                  key={s.label}
+                  href={s.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={s.label}
+                  className="flex h-9 w-9 items-center justify-center rounded-lg border border-line text-muted transition-colors hover:border-[rgba(124,156,255,0.4)] hover:text-foreground"
+                >
+                  <s.icon size={16} />
+                </a>
+              ))}
+            </div>
+          </div>
 
-        {/* Quick Links */}
-        <div>
-          <h4 className="text-xl font-semibold mb-3">Quick Links</h4>
-          <ul className="space-y-2">
-            <li>
-              <Link href="/" className="hover:text-yellow-400">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link href="/about" className="hover:text-yellow-400">
-                About
-              </Link>
-            </li>
-            <li>
-              <Link href="/services" className="hover:text-yellow-400">
-                Services
-              </Link>
-            </li>
-            <li>
-              <Link href="/contact" className="hover:text-yellow-400">
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </div>
+          {/* Navigation */}
+          <div className="md:col-span-2">
+            <h4 className="font-mono text-xs uppercase tracking-widest text-faint">
+              Company
+            </h4>
+            <ul className="mt-4 space-y-3">
+              {nav.map((l) => (
+                <li key={l.href}>
+                  <Link
+                    href={l.href}
+                    className="text-sm text-muted transition-colors hover:text-foreground"
+                  >
+                    {l.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-        {/* Contact */}
-        <div>
-          <h4 className="text-xl font-semibold mb-3">Contact</h4>
-          <p className="text-gray-300">Email: info@solutionwings.com</p>
-          <div className="flex space-x-4 mt-4">
-            <Link
-              href="https://www.linkedin.com/company/solution-wings"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-yellow-400"
-            >
-              <FaLinkedin size={20} />
-            </Link>
-            <a href="#" className="hover:text-yellow-400">
-              <FaFacebook size={20} />
-            </a>
-            <a href="#" className="hover:text-yellow-400">
-              <FaInstagram size={20} />
-            </a>
+          {/* Services */}
+          <div className="md:col-span-3">
+            <h4 className="font-mono text-xs uppercase tracking-widest text-faint">
+              Services
+            </h4>
+            <ul className="mt-4 space-y-3">
+              {services.slice(0, 6).map((s) => (
+                <li key={s.slug}>
+                  <Link
+                    href={`/services#${s.slug}`}
+                    className="text-sm text-muted transition-colors hover:text-foreground"
+                  >
+                    {s.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Contact */}
+          <div className="md:col-span-3">
+            <h4 className="font-mono text-xs uppercase tracking-widest text-faint">
+              Contact
+            </h4>
+            <ul className="mt-4 space-y-3 text-sm text-muted">
+              <li>
+                <a
+                  href={`mailto:${company.email}`}
+                  className="flex items-center gap-2.5 transition-colors hover:text-foreground"
+                >
+                  <Mail size={15} /> {company.email}
+                </a>
+              </li>
+              <li>
+                <a
+                  href={`tel:${company.phoneHref}`}
+                  className="flex items-center gap-2.5 transition-colors hover:text-foreground"
+                >
+                  <Phone size={15} /> {company.phone}
+                </a>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <MapPin size={15} className="mt-0.5 shrink-0" />
+                {company.address}
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
 
-      {/* Bottom strip */}
-      <div className="text-center text-gray-400 mt-10 border-t border-gray-700 pt-6">
-        © {new Date().getFullYear()} solutionwings — All Rights Reserved
+        <div className="hairline mt-14" />
+
+        <div className="mt-8 flex flex-col items-center justify-between gap-4 md:flex-row">
+          <p className="text-xs text-faint">
+            © {new Date().getFullYear()} Solution Wings. All rights reserved.
+          </p>
+          <p className="font-mono text-xs text-faint">
+            engineered, not templated
+          </p>
+        </div>
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}
