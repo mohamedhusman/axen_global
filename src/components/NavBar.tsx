@@ -60,7 +60,7 @@ export default function NavBar() {
           : "border-b border-transparent bg-transparent",
       )}
     >
-      <nav className="container-site flex h-16 items-center justify-between md:h-18 overflow-x-hidden">
+      <nav className="container-site flex h-16 items-center justify-between md:h-18">
         <Wordmark />
 
         <div className="hidden items-center gap-1 md:flex">
